@@ -8,31 +8,49 @@
     
 
 }
+
+#tsparticles{
+    background-image: url("../assets/wood3.jpg");
+}
+@keyframes slideInLeft{
+    from{
+        transform: translateX(-1200px)
+    }
+    to{
+        transform: translateX(0);
+    }
+}
 #box{
     display: flex;
     flex-basis: 30%; 
     border: 2px solid black;
     height: 150px;
     font-size: 150px;
-    padding-left: 10px;
-
+    color: white;
+    transition: color 4s ease-out 0s;
+    animation-name: slideInLeft;
+    animation-duration: .3s;
+    
     
 }
-
+.winningStatement{
+    width: 450px;
+    margin: 0 auto; 
+}
 .players{
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 70px;
 }
-.title{
+.title {
     text-align: center;
-    margin-bottom: 0px;
-    background-color: rgb(129, 63, 63);
+    margin: 0 auto; 
+    background-image: url("../assets/wood5.jpg");
+    width: 450px;
+    color: white;
 }
-.button{
-    text-align: center;
-    margin: 50px;
-}
+
+
 .finalNames{
     display: flex;
     justify-content: space-around;
@@ -45,10 +63,10 @@ h3{
 text-align: center;
 }
 .player1{
-   color: blue
+   color: rgb(48, 67, 144)
 }
 .player2{
-    color: red
+    color: rgb(48, 67, 67)
 }
 h1{
     text-align: center;

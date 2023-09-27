@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body id="tsparticles">
     <h1 class="title">Tic Tac Toe</h1>
     <h3>To play VS computer leave Player Two blank</h3>
     <div class="players">
@@ -26,6 +26,7 @@
       <h3 class="secondName"></h3>
     </div>
     <h1 class="winningStatement"></h1>
+    <div class="bord">
     <div class="playBoard">
       <table>
         <tr>
@@ -45,9 +46,11 @@
         </tr>
       </table>
     </div>
+  </div>
     <div class="reset">
       <button  id="resetButton">Reset</button>
     </div>
     <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"></script>
   </body>
 </html>
